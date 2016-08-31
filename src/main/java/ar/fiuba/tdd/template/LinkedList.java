@@ -3,11 +3,11 @@ package ar.fiuba.tdd.template;
 
 public class LinkedList {
 
-    private int firstNode;
-    private int lastNode;
+    private NodeList firstNode;
+    private NodeList lastNode;
 
     LinkedList(){
-        firstNode = lastNode = 1;
+        firstNode = lastNode = null;
     }
 
 }
