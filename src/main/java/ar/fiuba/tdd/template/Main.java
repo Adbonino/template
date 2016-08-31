@@ -16,9 +16,6 @@ public class Main {
         cola.add(cadena);
         cola.print_list();
         cola.size();
-
-
-
         System.out.println("Cantidad de elementos: " + cola.size() );
 
     }

@@ -5,9 +5,7 @@ class LinkedList {
     private NodeList firstNode;
     private NodeList lastNode;
 
-    LinkedList() {
-        firstNode = lastNode = null;
-    }
+    private LinkedList nextList;
 
     void insertLast(Object elem) {
         if (isClean()) {
@@ -46,7 +44,6 @@ class LinkedList {
             actual = actual.nextNode;
         }
     }
-
 
 
 }
