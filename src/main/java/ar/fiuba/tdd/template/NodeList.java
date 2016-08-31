@@ -22,7 +22,6 @@ class NodeList {
         return nextNode;
     }
 
-    //Comentario
 
 
 }

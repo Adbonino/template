@@ -18,7 +18,6 @@ public class Main {
         cola.size();
         System.out.println("Cantidad de elementos: " + cola.size() );
 
-        //Comentario
 
     }
 

@@ -15,8 +15,6 @@ class LinkedList {
         }
     }
 
-    //comentario
-
 
 
     boolean isClean() {
