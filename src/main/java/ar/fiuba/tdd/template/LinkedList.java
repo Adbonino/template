@@ -2,54 +2,49 @@ package ar.fiuba.tdd.template;
 
 
 class LinkedList {
-    private NodeList _FirstNode$;
-    private NodeList _LastNode;
+    private NodeList firstNode;
+    private NodeList lastNode;
 
-    LinkedList() {
-        _FirstNode$ = _LastNode = null;
-    }
+    private LinkedList nextList;
 
-    void InsertLast(Object elem) {
-        if (IsClean()) {
-            _FirstNode$ = _LastNode = new NodeList(elem);
-        }
-        else {
-            _LastNode = _LastNode.NextNode = new NodeList(elem);
-        }
-    }
-
-    boolean IsClean(){
-        return _FirstNode$ == null;
-    }
-
-    Object Get_Item() {
-        return _FirstNode$.Item;
-    }
-
-    void Remove_Item() {
-        _FirstNode$ = _FirstNode$.NextNode;
-    }
-
-    int Size_List() {
-        NodeList actual = _FirstNode$;
-        int Count=0;
-        while ( actual != null )
-        {
-            actual = actual.NextNode;
-            Count++;
-        }
-        return Count;
-    }
-
-    void PrintList() {
-        NodeList actual = _FirstNode$;
-        while ( actual != null )
-        {
-            System.out.println(actual.Item.toString() );
-            actual = actual.NextNode;
+    void insertLast(Object elem) {
+        if (isClean()) {
+            firstNode = lastNode = new NodeList(elem);
+        } else {
+            lastNode = lastNode.nextNode = new NodeList(elem);
         }
     }
 
 
+
+    boolean isClean() {
+        return firstNode == null;
+    }
+
+    Object get_Item() {
+        return firstNode.item;
+    }
+
+    void remove_Item() {
+        firstNode = firstNode.nextNode;
+    }
+
+    int size_List() {
+        NodeList actual = firstNode;
+        int count = 0;
+        while ( actual != null ) {
+            actual = actual.nextNode;
+            count++;
+        }
+        return count;
+    }
+
+    void printList() {
+        NodeList actual = firstNode;
+        while ( actual != null ) {
+            System.out.println(actual.item.toString() );
+            actual = actual.nextNode;
+        }
+    }
 
 }
