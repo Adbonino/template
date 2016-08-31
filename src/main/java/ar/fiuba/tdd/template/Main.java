@@ -17,9 +17,8 @@ public class Main {
         cola.print_list();
         cola.size();
 
-        int Cantidad_de_elementos;
 
-        System.out.println("Cantidad de elementos: " + cola.size() );
+
         System.out.println("Cantidad de elementos: " + cola.size() );
 
     }
