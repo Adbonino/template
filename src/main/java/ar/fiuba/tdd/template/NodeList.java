@@ -23,7 +23,4 @@ class NodeList {
         return nextNode;
     }
 
-
-
-
 }
