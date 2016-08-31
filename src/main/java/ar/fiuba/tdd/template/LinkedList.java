@@ -15,6 +15,10 @@ class LinkedList {
         }
     }
 
+    //comentario
+
+
+
     boolean isClean() {
         return firstNode == null;
     }
