@@ -3,8 +3,8 @@ package ar.fiuba.tdd.template;
 
 class NodeList {
 
-    Object item;
-    NodeList nextNode;
+    private Object item;
+    private NodeList nextNode;
 
     NodeList(Object dato) {
         this(dato, null);
