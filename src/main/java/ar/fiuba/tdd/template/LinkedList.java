@@ -12,9 +12,8 @@ class LinkedList {
     void insertLast(Object elem) {
         if (isClean()) {
             firstNode = lastNode = new NodeList(elem);
-        }
-        else {
-            lastNode = lastNode.NextNode = new NodeList(elem);
+        } else {
+            lastNode = lastNode.nextNode = new NodeList(elem);
         }
     }
 
@@ -27,14 +26,14 @@ class LinkedList {
     }
 
     void remove_Item() {
-        firstNode = firstNode.NextNode;
+        firstNode = firstNode.nextNode;
     }
 
     int size_List() {
         NodeList actual = firstNode;
         int count = 0;
         while ( actual != null ) {
-            actual = actual.NextNode;
+            actual = actual.nextNode;
             count++;
         }
         return count;
@@ -44,7 +43,7 @@ class LinkedList {
         NodeList actual = firstNode;
         while ( actual != null ) {
             System.out.println(actual.item.toString() );
-            actual = actual.NextNode;
+            actual = actual.nextNode;
         }
     }
 

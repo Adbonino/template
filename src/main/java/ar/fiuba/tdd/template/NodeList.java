@@ -3,7 +3,7 @@ package ar.fiuba.tdd.template;
 
 class NodeList {
     Object item;
-    NodeList NextNode;
+    NodeList nextNode;
 
     NodeList(Object dato) {
         this(dato, null);
@@ -11,15 +11,15 @@ class NodeList {
 
     private NodeList(Object dato, NodeList nodo) {
         item = dato;
-        NextNode = nodo;
+        nextNode = nodo;
     }
 
-    Object GetItem() {
+    Object getItem() {
         return item;
     }
 
-    NodeList GetNext_Node() {
-        return NextNode;
+    NodeList getNext_Node() {
+        return nextNode;
     }
 
 
