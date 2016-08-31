@@ -1,7 +1,7 @@
 package ar.fiuba.tdd.template;
 
 
-public class NodeList {
+class NodeList {
 
     Object item;
     NodeList nextNode;
