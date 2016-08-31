@@ -3,32 +3,34 @@ package ar.fiuba.tdd.template;
 
 class Queue  {
 
-    private LinkedList QueueList;
+    private LinkedList queueList;
 
-    Queue() {  QueueList = new LinkedList(); }
+    Queue() {
+        queueList = new LinkedList();
+    }
 
     public boolean isEmpty() {
-        return QueueList.IsClean();
+        return queueList.isClean();
     }
 
     int size() {
-        return QueueList.Size_List();
+        return queueList.Size_List();
     }
 
     void add(Object item) {
-        QueueList.InsertLast(item);
+        queueList.InsertLast(item);
     }
 
     public Object top() {
-        return QueueList.Get_Item();
+        return queueList.get_Item();
     }
 
     public void remove() {
-        QueueList.Remove_Item();
+        queueList.remove_Item();
     }
 
     void print_list() {
-        QueueList.PrintList();
+        queueList.PrintList();
     }
 
 
