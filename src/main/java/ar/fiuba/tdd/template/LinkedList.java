@@ -9,6 +9,9 @@ public class LinkedList {
         _firstNode = _lastNode = null ;
     }
 
+    Object get_Item() {
+        return _firstNode.getItem();
+    }
 
 
     boolean isClean() {
