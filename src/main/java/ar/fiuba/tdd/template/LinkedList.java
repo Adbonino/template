@@ -9,9 +9,10 @@ class LinkedList {
         firstNode = lastNode = null;
     }
 
-    void InsertLast(Object elem) {
+    void insertLast(Object elem) {
         if (isClean()) {
-            firstNode = lastNode = new NodeList(elem); }
+            firstNode = lastNode = new NodeList(elem);
+        }
         else {
             lastNode = lastNode.NextNode = new NodeList(elem);
         }
@@ -22,16 +23,16 @@ class LinkedList {
     }
 
     Object get_Item() {
-        return firstNode.Item;
+        return firstNode.item;
     }
 
     void remove_Item() {
         firstNode = firstNode.NextNode;
     }
 
-    int Size_List() {
+    int size_List() {
         NodeList actual = firstNode;
-        int count=0;
+        int count = 0;
         while ( actual != null ) {
             actual = actual.NextNode;
             count++;
@@ -39,10 +40,10 @@ class LinkedList {
         return count;
     }
 
-    void PrintList() {
+    void printList() {
         NodeList actual = firstNode;
         while ( actual != null ) {
-            System.out.println(actual.Item.toString() );
+            System.out.println(actual.item.toString() );
             actual = actual.NextNode;
         }
     }

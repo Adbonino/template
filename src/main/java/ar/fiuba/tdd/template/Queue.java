@@ -14,11 +14,11 @@ class Queue  {
     }
 
     int size() {
-        return queueList.Size_List();
+        return queueList.size_List();
     }
 
     void add(Object item) {
-        queueList.InsertLast(item);
+        queueList.insertLast(item);
     }
 
     public Object top() {
@@ -30,7 +30,7 @@ class Queue  {
     }
 
     void print_list() {
-        queueList.PrintList();
+        queueList.printList();
     }
 
 
