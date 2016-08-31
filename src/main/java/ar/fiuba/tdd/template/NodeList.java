@@ -1,9 +1,10 @@
 package ar.fiuba.tdd.template;
 
 
-class NodeList {
-    private Object item;
-    private NodeList nextNode;
+public class NodeList {
+
+    Object item;
+    NodeList nextNode;
 
     NodeList(Object dato) {
         this(dato, null);
@@ -21,5 +22,6 @@ class NodeList {
     NodeList getNext_Node() {
         return nextNode;
     }
+
 
 }
