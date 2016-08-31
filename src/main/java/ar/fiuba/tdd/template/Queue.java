@@ -1,17 +1,17 @@
 package ar.fiuba.tdd.template;
 
 
-class Queue <T> {
+class Queue  {
 
     private Linked_List Queue_List;
 
-    Queue() {  Queue_List = new Linked_List<>(); }
+    Queue() {  Queue_List = new Linked_List(); }
 
     public boolean isEmpty() { return Queue_List.IsClean(); }
 
     int size() { return Queue_List.Size_List(); }
 
-    void add(T item) { Queue_List.Insert_Last(item);  }
+    void add(Object item) { Queue_List.Insert_Last(item);  }
 
     public Object top() { return Queue_List.Get_Item();   }
 

@@ -1,13 +1,13 @@
 package ar.fiuba.tdd.template;
 
 
-class Linked_List <T> {
+class Linked_List  {
     private Node_List First_Node;
     private Node_List Last_Node;
 
     Linked_List() { First_Node = Last_Node = null; }
 
-    void Insert_Last(T elem) {
+    void Insert_Last(Object elem) {
         if (IsClean())
             First_Node = Last_Node = new Node_List(elem);
         else
