@@ -2,34 +2,36 @@ package ar.fiuba.tdd.template;
 
 
 class LinkedList {
-    private NodeList FirstNode;
-    private NodeList LastNode;
+    private NodeList _FirstNode$;
+    private NodeList _LastNode;
 
     LinkedList() {
-        FirstNode = LastNode = null;
+        _FirstNode$ = _LastNode = null;
     }
 
     void InsertLast(Object elem) {
-        if (IsClean())
-            FirstNode = LastNode = new NodeList(elem);
-        else
-            LastNode = LastNode.NextNode = new NodeList(elem);
+        if (IsClean()) {
+            _FirstNode$ = _LastNode = new NodeList(elem);
+        }
+        else {
+            _LastNode = _LastNode.NextNode = new NodeList(elem);
+        }
     }
 
     boolean IsClean(){
-        return FirstNode == null;
+        return _FirstNode$ == null;
     }
 
     Object Get_Item() {
-        return FirstNode.Item;
+        return _FirstNode$.Item;
     }
 
     void Remove_Item() {
-        FirstNode = FirstNode.NextNode;
+        _FirstNode$ = _FirstNode$.NextNode;
     }
 
     int Size_List() {
-        NodeList actual = FirstNode;
+        NodeList actual = _FirstNode$;
         int Count=0;
         while ( actual != null )
         {
@@ -40,7 +42,7 @@ class LinkedList {
     }
 
     void PrintList() {
-        NodeList actual = FirstNode;
+        NodeList actual = _FirstNode$;
         while ( actual != null )
         {
             System.out.println(actual.Item.toString() );
