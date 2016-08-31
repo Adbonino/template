@@ -2,25 +2,26 @@ package ar.fiuba.tdd.template;
 
 
 class NodeList {
-    Object Item;
-    NodeList NextNode;
+    Object item;
+    NodeList nextNode;
 
     NodeList(Object dato) {
         this(dato, null);
     }
 
     private NodeList(Object dato, NodeList nodo) {
-        Item = dato;
-        NextNode = nodo;
+        item = dato;
+        nextNode = nodo;
     }
 
-    Object GetItem() {
-        return Item;
+    Object getItem() {
+        return item;
     }
 
-    NodeList GetNext_Node() {
-        return NextNode;
+    NodeList getNext_Node() {
+        return nextNode;
     }
+
 
 
 }
