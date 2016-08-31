@@ -20,6 +20,7 @@ public class Main {
         int Cantidad_de_elementos;
 
         System.out.println("Cantidad de elementos: " + cola.size() );
+        System.out.println("Cantidad de elementos: " + cola.size() );
 
     }
 
