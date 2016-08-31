@@ -5,7 +5,9 @@ class LinkedList {
     private NodeList FirstNode;
     private NodeList LastNode;
 
-    LinkedList() { FirstNode = LastNode = null; }
+    LinkedList() {
+        FirstNode = LastNode = null;
+    }
 
     void InsertLast(Object elem) {
         if (IsClean())
@@ -14,11 +16,17 @@ class LinkedList {
             LastNode = LastNode.NextNode = new NodeList(elem);
     }
 
-    boolean IsClean(){ return FirstNode == null; }
+    boolean IsClean(){
+        return FirstNode == null;
+    }
 
-    Object Get_Item() { return FirstNode.Item; }
+    Object Get_Item() {
+        return FirstNode.Item;
+    }
 
-    void Remove_Item() { FirstNode = FirstNode.NextNode; }
+    void Remove_Item() {
+        FirstNode = FirstNode.NextNode;
+    }
 
     int Size_List() {
         NodeList actual = FirstNode;
