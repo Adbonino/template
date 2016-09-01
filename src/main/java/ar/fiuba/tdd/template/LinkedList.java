@@ -1,7 +1,7 @@
 package ar.fiuba.tdd.template;
 
 
-class LinkedList{
+class LinkedList {
 
     private NodeList firstNode;
     private NodeList lastNode;
