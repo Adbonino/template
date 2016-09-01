@@ -6,10 +6,6 @@ class LinkedList {
     private NodeList firstNode;
     private NodeList lastNode;
 
-    //Comentarios
-
-
-
     void insertLast(Object elem) {
         if (isClean()) {
             firstNode = lastNode = new NodeList(elem);
